@@ -2,13 +2,18 @@
 #include <vector>
 using namespace std;
 
-//not sure how to print o/p
+//to sort 0s 1s 2s using dutch national flag algorithm
 
 void sortnums(vector<int>nums) {
-    int n= nums.size();
+    int n= nums.size();//take 3 pointers low mid high
+    // 0 to low-1 should have 0s
+    //low to mid-1 should have 1s
+    //mid to high has all unsorted elements
+    //high +1 to n-1 has all 2s
+    
     int low =0, mid=0, high =n-1;
 
-   while(mid<=high) {
+   while(mid<=high) { //lets assume initially whole array is unsorted , it lies between mid to high
     if(nums[mid]==0)
     {
         swap(nums[mid],nums[0]);
