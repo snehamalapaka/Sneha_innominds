@@ -4,8 +4,9 @@ using namespace std;
 
 //optimal approach to find if pair sum equals target
 //time complexity O(n)
+//array arranged in ascending order
 
-//worked on online gdb
+
 
 
 vector<int>targetpair(vector<int>nums,int target) {
@@ -14,13 +15,14 @@ vector<int>targetpair(vector<int>nums,int target) {
 
     int i=0;
     int j=n-1;
+    // 2 pointers i from front and j from back
 
     while(i<j){
 
-    if(nums[i]+nums[j]>target){
+    if(nums[i]+nums[j]>target){ //we know by decreasing j(moving j to left) sum decreases as array is arranged in ascending order
         j--;
     }
-    else if(nums[i]+nums[j]<target)
+    else if(nums[i]+nums[j]<target)//if sum is less tahn target we need to increase sum by moving i to right
     {
         i++;
     }else {
