@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+//to find duplicate element in an arrray
+//lets take 2 pointers slow and fast
 
-//no error
-//online gdb not printing anything
 
 int findduplicate(vector<int>arr) {
     int slow = arr[0], fast=arr[1];
@@ -24,7 +24,8 @@ int findduplicate(vector<int>arr) {
     slow = arr[slow];//+1
     fast = arr[fast];//+1
    }
-
+//index at where slow and fast meet is where cycle starts
+//slow points to repeated value
    return slow;
 }
 
