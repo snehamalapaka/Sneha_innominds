@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-//worked on online gdb
+//to check max subarray sum
 
 int maxSubArray(vector<int>nums) {
     int currSum =0, maxSum=INT_MIN;
