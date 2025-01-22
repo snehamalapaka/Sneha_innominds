@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+//to check which element is repeating more number of times
 
 int majorelement(vector<int>&nums)
 {
