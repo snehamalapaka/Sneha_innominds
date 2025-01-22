@@ -2,7 +2,10 @@
 #include <vector>
 using namespace std;
 
-//worked on online gdb
+//bubble sort- to sort array in ascending order
+//outer loop runs n-1 iterations where n is size of array
+//outer loop i , inner loop j (inner loop runs n-1-i ) times
+
 
 void bubblesort(int array[],int n) {
 
